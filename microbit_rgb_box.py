@@ -59,16 +59,16 @@ def strobe_loop():
     x = x + 1
 
 def eval_radio(received):
-    if rcvd:
-      if rcvd == "flash":
-        strobe_loop()
-      elif rcvd == "soft":
-        color_loop()
-      elif rcvd == "hard":
+    if rcvd == "flash":
+      strobe_loop()
+    elif rcvd == "soft":
+      color_loop()
+    elif rcvd == "hard":
 
 while True:
   rcvd = radio.receive()
-  eval_radio(rcvd)
+  if rcvd:
+    eval_radio(rcvd)
       
     
 
