@@ -7,6 +7,8 @@ import radio
 
 radio.on()
 
+r, c = 8, 3;
+my_colors = [[0 for x in range(r)] for y in range(c)] 
 
 # here we are going to set the rgb values that produce each color
 red = []
@@ -18,12 +20,9 @@ purple = []
 orange = []
 white = []
 
-# Here we are going to create an array that we can move through and set current color
-my_colors = [red,orange,yellow,green,blue,purple,lightpink,white]
-
 # current color here is "red" to start.  0 refers to index of above array
 # Note: if you are new to programming you should know, lists start at 0 in python ( not 1)
-current_color = 0
+current_color_index = 0
 
 # Setting to slowly move microbit through color range
 def color_loop():
@@ -34,6 +33,13 @@ def color_loop():
 
 # Setting to shift between specific colors
 def change_color():
+  global current_color_index
+  if current_color_index == len(my_colors):
+    current_color_index = 1
+  else
+    current_color_index += 1
+  turn_on_led(my_colors[current_color_index][0],my_colors[current_color_index][1],my_colors[current_color_index][2])
+  
 
 # turn it off
 def turn_off_led():
