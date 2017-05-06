@@ -20,7 +20,10 @@ white = []
 
 # Here we are going to create an array that we can move through and set current color
 my_colors = [red,orange,yellow,green,blue,purple,lightpink,white]
-current_color = white
+
+# current color here is "red" to start.  0 refers to index of above array
+# Note: if you are new to programming you should know, arrays start at 0 in python ( not 1)
+current_color = 0
 
 # Setting to slowly move microbit through color range
 def color_loop():
