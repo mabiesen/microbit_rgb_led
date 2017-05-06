@@ -1,6 +1,10 @@
 from microbit import *
 import radio
 
+
+# connect microbit 0,1,2 to r,g,b inputs
+# connect ground to ground, volts in to volts in
+
 radio.on()
 
 
