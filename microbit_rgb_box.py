@@ -71,7 +71,8 @@ def eval_radio(received):
     strobe_loop()
   elif rcvd == "soft":
     color_loop()
-  elif rcvd == "hard":
+  elif rcvd == "change":
+    change_color()
 
 while True:
   rcvd = radio.receive()
