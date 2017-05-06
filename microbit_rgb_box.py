@@ -24,6 +24,9 @@ current_color = white
 
 # Setting to slowly move microbit through color range
 def color_loop():
+  least = 1023
+  most = 0
+  
 
 
 # Setting to shift between specific colors
@@ -55,15 +58,17 @@ def strobe_loop():
     turn_off_led()
     x = x + 1
 
+def eval_radio(received):
+    if rcvd:
+      if rcvd == "flash":
+        strobe_loop()
+      elif rcvd == "soft":
+        color_loop()
+      elif rcvd == "hard":
 
 while True:
   rcvd = radio.receive()
-  if rcvd:
-    if rcvd == "flash":
-      strobe_loop()
-    elif rcvd == "soft":
-      color_loop()
-    elif rcvd == "hard":
+  eval_radio(rcvd)
       
     
 
