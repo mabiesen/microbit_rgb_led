@@ -7,9 +7,6 @@ import radio
 
 radio.on()
 
-r, c = 8, 3;
-my_colors = [[0 for x in range(r)] for y in range(c)] 
-
 # here we are going to set the rgb values that produce each color
 red = []
 lightpink = []
@@ -19,6 +16,8 @@ blue = []
 purple = []
 orange = []
 white = []
+
+my_colors = [red,orange,yellow,green,blue,purple,pink,white]
 
 # current color here is "red" to start.  0 refers to index of above array
 # Note: if you are new to programming you should know, lists start at 0 in python ( not 1)
