@@ -8,10 +8,6 @@ import radio
 radio.on()
 
 
-red = 0
-blue = 0
-green = 0
-
 # here we are going to set the rgb values that produce each color
 red = []
 lightpink = []
@@ -47,7 +43,6 @@ def turn_on_led(r,g,b):
   pin2.write_analog(b)
   
 
-
 # Setting to flash, slow to so fast its constant
 def strobe_loop():
   x = 1
@@ -59,8 +54,6 @@ def strobe_loop():
     sleep(crntsleep)
     turn_off_led()
     x = x + 1
-    
-
 
 
 while True:
