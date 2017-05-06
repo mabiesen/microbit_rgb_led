@@ -30,10 +30,10 @@ def change_color():
 # Setting to flash, slow to so fast its constant
 def strobe_loop():
   x = 1
-  sleepstep = .03
+  sleepstep = 30
   while x < 30:
     
-    sleep(1 - (sleepstep * x))
+    sleep(1000 - (sleepstep * x))
     x = x + 1
     
 
