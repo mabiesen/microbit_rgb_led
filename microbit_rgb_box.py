@@ -35,7 +35,7 @@ def change_color():
   global current_color_index
   if current_color_index == len(my_colors):
     current_color_index = 1
-  else
+  else:
     current_color_index += 1
   turn_on_led(my_colors[current_color_index][0],my_colors[current_color_index][1],my_colors[current_color_index][2])
   
