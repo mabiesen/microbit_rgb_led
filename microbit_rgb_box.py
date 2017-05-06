@@ -8,16 +8,16 @@ import radio
 radio.on()
 
 # here we are going to set the rgb values that produce each color
-red = []
-lightpink = []
-yellow = []
-green = []
-blue = []
-purple = []
-orange = []
-white = []
+red = [0,1023,1023]
+lightpink = [0,700,0]
+yellow = [0,0,1023]
+green = [1023,0,1023]
+blue = [1023,1023,0]
+purple = [0,1023,0]
+orange = [0,550,1023]
+white = [1023,1023,1023]
 
-my_colors = [red,orange,yellow,green,blue,purple,pink,white]
+my_colors = [red,orange,yellow,green,blue,purple,lightpink,white]
 
 # current color here is "red" to start.  0 refers to index of above array
 # Note: if you are new to programming you should know, lists start at 0 in python ( not 1)
@@ -61,9 +61,9 @@ def strobe_loop():
   on = 1
   while x < 30:
     turn_on_led(on,on,on)
+    turn_off_led()
     crntsleep = (sleepstep**x) * 1000   # 1000 is 1 second
     sleep(crntsleep)
-    turn_off_led()
     x = x + 1
 
 def eval_radio(received):
@@ -78,6 +78,5 @@ while True:
   rcvd = radio.receive()
   if rcvd:
     eval_radio(rcvd)
-      
     
 
