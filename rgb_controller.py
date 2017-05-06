@@ -18,4 +18,6 @@ while True:
   display.scroll(options[crnt_option])
   if button_a.was_pressed():
     change_crnt_option()
+  if button_b.was_pressed():
+    radio.send(options[crnt_option])
   
