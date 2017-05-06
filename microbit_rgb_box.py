@@ -31,10 +31,16 @@ def change_color():
 
 # turn it off
 def turn_off_led():
+  off = 1023
+  pin0.write_analog(off)
+  pin1.write_analog(off)
+  pin2.write_analog(off)
   
 # turn it on, providing
 def turn_on_led(r,g,b):
-  
+  pin0.write_analog(r)
+  pin1.write_analog(g)
+  pin2.write_analog(b)
   
 
 
