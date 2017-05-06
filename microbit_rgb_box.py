@@ -22,7 +22,7 @@ white = []
 my_colors = [red,orange,yellow,green,blue,purple,lightpink,white]
 
 # current color here is "red" to start.  0 refers to index of above array
-# Note: if you are new to programming you should know, arrays start at 0 in python ( not 1)
+# Note: if you are new to programming you should know, lists start at 0 in python ( not 1)
 current_color = 0
 
 # Setting to slowly move microbit through color range
