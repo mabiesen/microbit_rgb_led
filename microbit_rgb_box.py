@@ -58,8 +58,8 @@ def turn_on_led(r,g,b):
 def strobe_loop():
   x = 1
   sleepstep = 0.9
+  on = 1
   while x < 30:
-    on = 1
     turn_on_led(on,on,on)
     crntsleep = (sleepstep**x) * 1000   # 1000 is 1 second
     sleep(crntsleep)
