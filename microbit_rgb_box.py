@@ -31,9 +31,7 @@ def change_color():
 def strobe_loop():
   x = 1
   sleepstep = 0.9
-  
   while x < 30:
-    
     crntsleep = (sleepstep**x) * 1000   # 1000 is 1 second
     sleep(crntsleep)
     x = x + 1
