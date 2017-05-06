@@ -8,7 +8,7 @@ red = 0
 blue = 0
 green = 0
 
-
+# here we are going to set the rgb values that produce each color
 red = []
 lightpink = []
 yellow = []
@@ -18,6 +18,7 @@ purple = []
 orange = []
 white = []
 
+# Here we are going to create an array that we can move through and set current color
 my_colors = [red,orange,yellow,green,blue,purple,lightpink,white]
 current_color = white
 
