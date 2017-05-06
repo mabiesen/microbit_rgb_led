@@ -16,8 +16,11 @@ green = []
 blue = []
 purple = []
 orange = []
+white = []
 
-my_colors = [red,orange,yellow,green,blue,purple,lightpink]
+my_colors = [red,orange,yellow,green,blue,purple,lightpink,white]
+
+current_color = white
 
 # Setting to slowly move microbit through color range
 def color_loop():
@@ -25,6 +28,14 @@ def color_loop():
 
 # Setting to shift between specific colors
 def change_color():
+
+# turn it off
+def turn_off_led():
+  
+# turn it on, providing
+def turn_on_led(r,g,b):
+  
+  
 
 
 # Setting to flash, slow to so fast its constant
