@@ -33,7 +33,7 @@ def color_loop():
 # Setting to shift between specific colors
 def change_color():
   global current_color_index
-  if current_color_index == len(my_colors):
+  if current_color_index == (len(my_colors)-1):
     current_color_index = 1
   else:
     current_color_index += 1
